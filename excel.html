@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<html lang="es" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atajos de Excel - Shortcuts Básicos y Avanzados para Profesionales</title>
+    <meta name="description" content="Aprende los atajos de Excel más útiles para trabajar más rápido. Desde básicos hasta avanzados, con ejemplos prácticos.">
+    <meta name="keywords" content="atajos Excel, shortcuts Excel, Excel básico, Excel avanzado, fórmulas Excel">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="Atajos de Excel - Shortcuts Básicos y Avanzados para Profesionales">
+    <meta property="og:description" content="Aprende los atajos de Excel más útiles para trabajar más rápido. Desde básicos hasta avanzados, con ejemplos prácticos.">
+    <meta property="og:type" content="article">
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="/excel.html">
+    
+    <!-- TailwindCSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#3b82f6',
+                        secondary: '#64748b'
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📊</text></svg>">
+    
+    <!-- JSON-LD Schema -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Article",
+        "headline": "Atajos de Excel - Shortcuts Básicos y Avanzados para Profesionales",
+        "description": "Aprende los atajos de Excel más útiles para trabajar más rápido. Desde básicos hasta avanzados, con ejemplos prácticos.",
+        "author": {
+            "@type": "Organization",
+            "name": "Atajos de Teclado"
+        },
+        "dateModified": "2024-01-15",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "/excel.html"
+        }
+    }
+    </script>
+</head>
+<body class="font-inter bg-gray-50 dark:bg-gray-900 text-gray-900 dark:text-gray-100 transition-colors duration-300">
+    <!-- Header -->
+    <header class="header-fixed fixed top-0 left-0 right-0 z-50 bg-white/80 dark:bg-gray-900/80 no-print">
+        <div class="container mx-auto px-4 py-3">
+            <nav class="flex items-center justify-between">
+                <div class="flex items-center space-x-2">
+                    <span class="text-2xl">⌨️</span>
+                    <a href="index.html" class="text-xl font-bold text-gray-900 dark:text-white">Atajos de Teclado</a>
+                </div>
+                
+                <div class="hidden lg:flex items-center space-x-6">
+                    <a href="windows.html" class="text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 font-medium transition-colors">Windows</a>
+                    <a href="excel.html" class="text-blue-600 dark:text-blue-400 font-medium">Excel</a>
+                    <a href="word.html" class="text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 font-medium transition-colors">Word</a>
+                    <a href="mac.html" class="text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 font-medium transition-colors">Mac</a>
+                    <a href="navegadores.html" class="text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 font-medium transition-colors">Navegadores</a>
+                    <a href="photoshop.html" class="text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 font-medium transition-colors">Photoshop</a>
+                    <a href="blog.html" class="text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 font-medium transition-colors">Blog</a>
+                </div>
+                
+                <div class="flex items-center space-x-4">
+                    <label class="dark-mode-toggle" for="darkModeToggle" title="Cambiar tema">
+                        <input type="checkbox" id="darkModeToggle" class="sr-only">
+                    </label>
+                    
+                    <button id="mobileMenuToggle" class="lg:hidden text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400">
+                        <i class="fas fa-bars text-xl"></i>
+                    </button>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="pt-20">
+        <!-- Hero Section -->
+        <section class="bg-gradient-to-br from-green-600 to-blue-700 text-white py-16">
+            <div class="container mx-auto px-4">
+                <div class="max-w-4xl mx-auto text-center">
+                    <div class="text-6xl mb-6">📊</div>
+                    <h1 class="text-4xl md:text-5xl font-bold mb-6">
+                        Atajos de Teclado para Excel
+                    </h1>
+                    <p class="text-xl md:text-2xl mb-8 opacity-90">
+                        Domina Excel con estos atajos esenciales. Desde navegación básica hasta funciones avanzadas para profesionales de datos.
+                    </p>
+                    
+                    <!-- Enlaces rápidos -->
+                    <div class="flex flex-wrap gap-4 justify-center">
+                        <a href="excel-basico.html" class="bg-white/20 hover:bg-white/30 text-white px-6 py-3 rounded-lg font-semibold transition-colors">
+                            Excel Básico
+                        </a>
+                        <a href="excel-avanzado.html" class="bg-white/20 hover:bg-white/30 text-white px-6 py-3 rounded-lg font-semibold transition-colors">
+                            Excel Avanzado
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Breadcrumb -->
+        <section class="bg-white dark:bg-gray-800 py-4 border-b border-gray-200 dark:border-gray-700">
+            <div class="container mx-auto px-4">
+                <nav class="flex" aria-label="Breadcrumb">
+                    <ol class="inline-flex items-center space-x-1 md:space-x-3">
+                        <li class="inline-flex items-center">
+                            <a href="index.html" class="text-gray-700 hover:text-blue-600 dark:text-gray-300 dark:hover:text-blue-400">
+                                <i class="fas fa-home mr-2"></i>Inicio
+                            </a>
+                        </li>
+                        <li>
+                            <div class="flex items-center">
+                                <i class="fas fa-chevron-right text-gray-400 mx-2"></i>
+                                <span class="text-gray-500 dark:text-gray-400">Excel</span>
+                            </div>
+                        </li>
+                    </ol>
+                </nav>
+            </div>
+        </section>
+
+        <!-- Introducción -->
+        <section class="py-12 bg-gray-50 dark:bg-gray-900">
+            <div class="container mx-auto px-4">
+                <div class="max-w-4xl mx-auto">
+                    <h2 class="text-3xl font-bold text-gray-900 dark:text-white mb-6">
+                        Aumenta tu Productividad en Excel
+                    </h2>
+                    <div class="prose max-w-none text-gray-600 dark:text-gray-400 text-lg">
+                        <p class="mb-4">
+                            Excel es una de las herramientas más potentes para el análisis de datos, cálculos financieros y gestión de información. 
+                            Conocer los atajos de teclado correctos puede transformar tu velocidad de trabajo y eficiencia.
+                        </p>
+                        <p class="mb-6">
+                            Esta guía cubre desde atajos básicos para principiantes hasta técnicas avanzadas para analistas de datos y 
+                            profesionales financieros. Aprende a navegar, formatear, crear fórmulas y gestionar datos como un experto.
+                        </p>
+                    </div>
+
+                    <!-- Estadísticas -->
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mt-8">
+                        <div class="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-lg text-center">
+                            <div class="text-3xl font-bold text-green-600 dark:text-green-400 mb-2">100+</div>
+                            <div class="text-gray-600 dark:text-gray-400">Atajos documentados</div>
+                        </div>
+                        <div class="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-lg text-center">
+                            <div class="text-3xl font-bold text-blue-600 dark:text-blue-400 mb-2">60%</div>
+                            <div class="text-gray-600 dark:text-gray-400">Tiempo ahorrado</div>
+                        </div>
+                        <div class="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-lg text-center">
+                            <div class="text-3xl font-bold text-purple-600 dark:text-purple-400 mb-2">3</div>
+                            <div class="text-gray-600 dark:text-gray-400">Niveles de dificultad</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Atajos Básicos -->
+        <section class="py-12 bg-white dark:bg-gray-800">
+            <div class="container mx-auto px-4">
+                <div class="max-w-6xl mx-auto">
+                    <h2 class="text-3xl font-bold text-gray-900 dark:text-white mb-8 text-center">
+                        Atajos Básicos de Excel
+                    </h2>
+                    <div class="bg-gray-50 dark:bg-gray-700 rounded-lg overflow-hidden shadow-lg">
+                        <div id="excelBasicTable"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Atajos Avanzados -->
+        <section class="py-12 bg-gray-50 dark:bg-gray-900">
+            <div class="container mx-auto px-4">
+                <div class="max-w-6xl mx-auto">
+                    <h2 class="text-3xl font-bold text-gray-900 dark:text-white mb-8 text-center">
+                        Atajos Avanzados de Excel
+                    </h2>
+                    <div class="bg-white dark:bg-gray-800 rounded-lg overflow-hidden shadow-lg">
+                        <div id="excelAdvancedTable"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Atajos para Fórmulas -->
+        <section class="py-12 bg-white dark:bg-gray-800">
+            <div class="container mx-auto px-4">
+                <div class="max-w-6xl mx-auto">
+                    <h2 class="text-3xl font-bold text-gray-900 dark:text-white mb-8 text-center">
+                        Atajos para Fórmulas y Funciones
+                    </h2>
+                    <div class="bg-gray-50 dark:bg-gray-700 rounded-lg overflow-hidden shadow-lg">
+                        <div id="excelFormulasTable"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Enlaces a versiones específicas -->
+        <section class="py-16 bg-gray-50 dark:bg-gray-900">
+            <div class="container mx-auto px-4">
+                <div class="max-w-4xl mx-auto text-center">
+                    <h2 class="text-3xl font-bold text-gray-900 dark:text-white mb-8">
+                        Atajos por Nivel de Experiencia
+                    </h2>
+                    <p class="text-lg text-gray-600 dark:text-gray-400 mb-12">
+                        Encuentra los atajos que se adapten a tu nivel de conocimiento en Excel.
+                    </p>
+
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                        <!-- Excel Básico -->
+                        <div class="card-hover bg-gradient-to-br from-green-50 to-green-100 dark:from-green-900 dark:to-green-800 p-8 rounded-lg border border-green-200 dark:border-green-700">
+                            <div class="text-4xl mb-4">🌱</div>
+                            <h3 class="text-2xl font-semibold text-gray-900 dark:text-white mb-4">
+                                Excel Básico
+                            </h3>
+                            <p class="text-gray-600 dark:text-gray-300 mb-6">
+                                Atajos fundamentales para empezar: navegación, selección, formato básico y funciones esenciales.
+                            </p>
+                            <div class="flex flex-wrap gap-2 mb-6">
+                                <span class="bg-green-200 dark:bg-green-700 text-green-800 dark:text-green-200 px-3 py-1 rounded-full text-sm">Navegación</span>
+                                <span class="bg-green-200 dark:bg-green-700 text-green-800 dark:text-green-200 px-3 py-1 rounded-full text-sm">Formato</span>
+                            </div>
+                            <a href="excel-basico.html" class="inline-flex items-center bg-green-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-green-700 transition-colors">
+                                Ver Excel Básico
+                                <i class="fas fa-arrow-right ml-2"></i>
+                            </a>
+                        </div>
+
+                        <!-- Excel Avanzado -->
+                        <div class="card-hover bg-gradient-to-br from-blue-50 to-blue-100 dark:from-blue-900 dark:to-blue-800 p-8 rounded-lg border border-blue-200 dark:border-blue-700">
+                            <div class="text-4xl mb-4">🚀</div>
+                            <h3 class="text-2xl font-semibold text-gray-900 dark:text-white mb-4">
+                                Excel Avanzado
+                            </h3>
+                            <p class="text-gray-600 dark:text-gray-300 mb-6">
+                                Técnicas profesionales: tablas dinámicas, macros, análisis de datos y funciones complejas.
+                            </p>
+                            <div class="flex flex-wrap gap-2 mb-6">
+                                <span class="bg-blue-200 dark:bg-blue-700 text-blue-800 dark:text-blue-200 px-3 py-1 rounded-full text-sm">Tablas dinámicas</span>
+                                <span class="bg-blue-200 dark:bg-blue-700 text-blue-800 dark:text-blue-200 px-3 py-1 rounded-full text-sm">Macros</span>
+                            </div>
+                            <a href="excel-avanzado.html" class="inline-flex items-center bg-blue-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-blue-700 transition-colors">
+                                Ver Excel Avanzado
+                                <i class="fas fa-arrow-right ml-2"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Consejos para Excel -->
+        <section class="py-16 bg-white dark:bg-gray-800">
+            <div class="container mx-auto px-4">
+                <div class="max-w-4xl mx-auto">
+                    <h2 class="text-3xl font-bold text-gray-900 dark:text-white mb-8 text-center">
+                        Consejos para Maximizar tu Productividad en Excel
+                    </h2>
+
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                        <div class="bg-gray-50 dark:bg-gray-700 p-6 rounded-lg shadow-lg">
+                            <div class="flex items-center mb-4">
+                                <div class="bg-green-100 dark:bg-green-900 p-3 rounded-lg mr-4">
+                                    <i class="fas fa-keyboard text-green-600 dark:text-green-400"></i>
+                                </div>
+                                <h3 class="text-xl font-semibold text-gray-900 dark:text-white">Memoriza F4</h3>
+                            </div>
+                            <p class="text-gray-600 dark:text-gray-400">
+                                F4 repite la última acción y alterna entre referencias relativas y absolutas. Es uno de los atajos más útiles.
+                            </p>
+                        </div>
+
+                        <div class="bg-gray-50 dark:bg-gray-700 p-6 rounded-lg shadow-lg">
+                            <div class="flex items-center mb-4">
+                                <div class="bg-blue-100 dark:bg-blue-900 p-3 rounded-lg mr-4">
+                                    <i class="fas fa-mouse text-blue-600 dark:text-blue-400"></i>
+                                </div>
+                                <h3 class="text-xl font-semibold text-gray-900 dark:text-white">Evita el Mouse</h3>
+                            </div>
+                            <p class="text-gray-600 dark:text-gray-400">
+                                Trata de mantener las manos en el teclado. Usa Ctrl+Flechas para navegar rápidamente entre celdas.
+                            </p>
+                        </div>
+
+                        <div class="bg-gray-50 dark:bg-gray-700 p-6 rounded-lg shadow-lg">
+                            <div class="flex items-center mb-4">
+                                <div class="bg-purple-100 dark:bg-purple-900 p-3 rounded-lg mr-4">
+                                    <i class="fas fa-table text-purple-600 dark:text-purple-400"></i>
+                                </div>
+                                <h3 class="text-xl font-semibold text-gray-900 dark:text-white">Usa Tablas</h3>
+                            </div>
+                            <p class="text-gray-600 dark:text-gray-400">
+                                Convierte tus datos en tablas (Ctrl+T) para acceder a funciones avanzadas y mejor navegación.
+                            </p>
+                        </div>
+
+                        <div class="bg-gray-50 dark:bg-gray-700 p-6 rounded-lg shadow-lg">
+                            <div class="flex items-center mb-4">
+                                <div class="bg-red-100 dark:bg-red-900 p-3 rounded-lg mr-4">
+                                    <i class="fas fa-star text-red-600 dark:text-red-400"></i>
+                                </div>
+                                <h3 class="text-xl font-semibold text-gray-900 dark:text-white">Personaliza la Barra</h3>
+                            </div>
+                            <p class="text-gray-600 dark:text-gray-400">
+                                Personaliza la barra de herramientas de acceso rápido con las funciones que más usas.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ Section -->
+        <section class="py-16 bg-gray-50 dark:bg-gray-900">
+            <div class="container mx-auto px-4">
+                <div class="max-w-4xl mx-auto">
+                    <h2 class="text-3xl font-bold text-gray-900 dark:text-white mb-8 text-center">
+                        Preguntas Frecuentes sobre Atajos de Excel
+                    </h2>
+
+                    <div class="space-y-6">
+                        <details class="bg-white dark:bg-gray-800 rounded-lg shadow-lg">
+                            <summary class="p-6 cursor-pointer font-semibold text-lg text-gray-900 dark:text-white">
+                                ¿Cuáles son los 5 atajos más importantes de Excel?
+                            </summary>
+                            <div class="px-6 pb-6 text-gray-600 dark:text-gray-400">
+                                <p>Los 5 atajos más importantes son:</p>
+                                <ul class="list-disc ml-6 mt-2 space-y-1">
+                                    <li>Ctrl+C / Ctrl+V (Copiar/Pegar)</li>
+                                    <li>Ctrl+Z (Deshacer)</li>
+                                    <li>F4 (Repetir acción/Referencias absolutas)</li>
+                                    <li>Ctrl+S (Guardar)</li>
+                                    <li>Ctrl+Flechas (Navegación rápida)</li>
+                                </ul>
+                            </div>
+                        </details>
+
+                        <details class="bg-white dark:bg-gray-800 rounded-lg shadow-lg">
+                            <summary class="p-6 cursor-pointer font-semibold text-lg text-gray-900 dark:text-white">
+                                ¿Cómo puedo recordar todos los atajos?
+                            </summary>
+                            <div class="px-6 pb-6 text-gray-600 dark:text-gray-400">
+                                <p>Aprende gradualmente: comienza con 5 atajos básicos y practica durante una semana antes de añadir nuevos. 
+                                La repetición constante es clave para convertirlos en memoria muscular.</p>
+                            </div>
+                        </details>
+
+                        <details class="bg-white dark:bg-gray-800 rounded-lg shadow-lg">
+                            <summary class="p-6 cursor-pointer font-semibold text-lg text-gray-900 dark:text-white">
+                                ¿Funcionan los mismos atajos en Excel para Mac?
+                            </summary>
+                            <div class="px-6 pb-6 text-gray-600 dark:text-gray-400">
+                                <p>La mayoría de los atajos funcionan cambiando Ctrl por Cmd en Mac. Por ejemplo, Ctrl+C se convierte en Cmd+C. 
+                                Algunos atajos específicos pueden variar.</p>
+                            </div>
+                        </details>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Enlaces relacionados -->
+        <section class="py-16 bg-white dark:bg-gray-800">
+            <div class="container mx-auto px-4">
+                <div class="max-w-4xl mx-auto text-center">
+                    <h2 class="text-3xl font-bold text-gray-900 dark:text-white mb-8">
+                        Explora Más Atajos
+                    </h2>
+
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                        <a href="word.html" class="card-hover bg-gray-50 dark:bg-gray-700 p-6 rounded-lg border border-gray-200 dark:border-gray-600">
+                            <div class="text-3xl mb-3">📝</div>
+                            <h3 class="text-lg font-semibold text-gray-900 dark:text-white mb-2">Word</h3>
+                            <p class="text-gray-600 dark:text-gray-400 text-sm">Atajos para procesador de texto</p>
+                        </a>
+
+                        <a href="windows.html" class="card-hover bg-gray-50 dark:bg-gray-700 p-6 rounded-lg border border-gray-200 dark:border-gray-600">
+                            <div class="text-3xl mb-3">🪟</div>
+                            <h3 class="text-lg font-semibold text-gray-900 dark:text-white mb-2">Windows</h3>
+                            <p class="text-gray-600 dark:text-gray-400 text-sm">Atajos del sistema operativo</p>
+                        </a>
+
+                        <a href="photoshop.html" class="card-hover bg-gray-50 dark:bg-gray-700 p-6 rounded-lg border border-gray-200 dark:border-gray-600">
+                            <div class="text-3xl mb-3">🎨</div>
+                            <h3 class="text-lg font-semibold text-gray-900 dark:text-white mb-2">Photoshop</h3>
+                            <p class="text-gray-600 dark:text-gray-400 text-sm">Atajos para diseño gráfico</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div class="md:col-span-1">
+                    <div class="flex items-center space-x-2 mb-4">
+                        <span class="text-2xl">⌨️</span>
+                        <span class="text-xl font-bold">Atajos de Teclado</span>
+                    </div>
+                    <p class="text-gray-400 mb-4">
+                        Tu guía completa para dominar los atajos de teclado y aumentar tu productividad diaria.
+                    </p>
+                </div>
+
+                <div>
+                    <h3 class="font-semibold mb-4">Categorías</h3>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="windows.html" class="hover:text-white transition-colors">Windows</a></li>
+                        <li><a href="excel.html" class="hover:text-white transition-colors">Excel</a></li>
+                        <li><a href="word.html" class="hover:text-white transition-colors">Word</a></li>
+                        <li><a href="mac.html" class="hover:text-white transition-colors">Mac</a></li>
+                        <li><a href="navegadores.html" class="hover:text-white transition-colors">Navegadores</a></li>
+                        <li><a href="photoshop.html" class="hover:text-white transition-colors">Photoshop</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h3 class="font-semibold mb-4">Recursos</h3>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="blog.html" class="hover:text-white transition-colors">Blog</a></li>
+                        <li><a href="#" class="hover:text-white transition-colors">Guía PDF</a></li>
+                        <li><a href="#" class="hover:text-white transition-colors">Cheat Sheets</a></li>
+                        <li><a href="#" class="hover:text-white transition-colors">Newsletter</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h3 class="font-semibold mb-4">Legal</h3>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="#" class="hover:text-white transition-colors">Privacidad</a></li>
+                        <li><a href="#" class="hover:text-white transition-colors">Términos</a></li>
+                        <li><a href="#" class="hover:text-white transition-colors">Contacto</a></li>
+                        <li><a href="#" class="hover:text-white transition-colors">Sobre nosotros</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
+                <p>&copy; 2024 Atajos de Teclado. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="js/shortcuts-data.js"></script>
+    <script src="js/main.js"></script>
+    <script>
+        // Schema FAQ para SEO
+        const faqSchema = {
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            "mainEntity": [
+                {
+                    "@type": "Question",
+                    "name": "¿Cuáles son los 5 atajos más importantes de Excel?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "Los 5 atajos más importantes son: Ctrl+C/Ctrl+V (Copiar/Pegar), Ctrl+Z (Deshacer), F4 (Repetir acción/Referencias absolutas), Ctrl+S (Guardar), y Ctrl+Flechas (Navegación rápida)."
+                    }
+                },
+                {
+                    "@type": "Question",
+                    "name": "¿Cómo puedo recordar todos los atajos?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "Aprende gradualmente: comienza con 5 atajos básicos y practica durante una semana antes de añadir nuevos. La repetición constante es clave para convertirlos en memoria muscular."
+                    }
+                }
+            ]
+        };
+
+        // Añadir schema al head
+        const script = document.createElement('script');
+        script.type = 'application/ld+json';
+        script.text = JSON.stringify(faqSchema);
+        document.head.appendChild(script);
+
+        // Renderizar tablas específicas de Excel
+        document.addEventListener('DOMContentLoaded', () => {
+            if (typeof shortcutsData !== 'undefined') {
+                ShortcutRenderer.renderTable(shortcutsData.excel.basic, 'excelBasicTable');
+                ShortcutRenderer.renderTable(shortcutsData.excel.advanced, 'excelAdvancedTable');
+                ShortcutRenderer.renderTable(shortcutsData.excel.formulas, 'excelFormulasTable');
+            }
+        });
+    </script>
+</body>
+</html>
