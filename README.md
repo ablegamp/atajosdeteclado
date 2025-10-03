@@ -21,7 +21,7 @@ Una web educativa completa sobre atajos de teclado con estructura SEO avanzada, 
 
 #### 🎨 Diseño y UX
 - **TailwindCSS** para diseño responsive y moderno
-- **Dark mode** implementado con toggle persistente
+- **Tema claro consistente** (se eliminó el modo oscuro y su toggle)
 - **Animaciones suaves** con CSS y JavaScript
 - **Tablas interactivas** con hover y efectos visuales
 - **Iconografía FontAwesome** para mejor comprensión visual
@@ -47,36 +47,35 @@ Una web educativa completa sobre atajos de teclado con estructura SEO avanzada, 
 /
 ├── index.html                    # Página principal
 ├── README.md                     # Esta documentación
-├── 
-├── 📂 css/
-│   └── main.css                  # Estilos personalizados y tema
-├── 
-├── 📂 js/
+├──
+├── css/
+│   └── main.css                  # Estilos personalizados
+├──
+├── js/
 │   ├── main.js                   # Funcionalidad principal de la app
 │   └── shortcuts-data.js         # Dataset centralizado de atajos
-├── 
-├── 🗂️ Páginas Pilares:
-│   ├── windows.html              # Atajos de Windows (general)
-│   ├── excel.html                # Atajos de Excel (completo)
-│   ├── word.html                 # Atajos de Word
-│   ├── mac.html                  # Atajos de macOS
-│   ├── navegadores.html          # Atajos de Chrome, Edge, Firefox
-│   └── photoshop.html            # Atajos de Adobe Photoshop
-├── 
-├── 🎯 Páginas Hijas Específicas:
+├──
+├── windows/
+│   ├── index.html                # Atajos de Windows (general)
 │   ├── windows-10.html           # Atajos específicos de Windows 10
-│   ├── windows-11.html           # Nuevas funciones de Windows 11
-│   ├── excel-basico.html         # Excel para principiantes
-│   ├── excel-avanzado.html       # Técnicas avanzadas de Excel
-│   ├── word-mac.html             # Word específico para Mac
-│   ├── photoshop-capas.html      # Atajos de capas en Photoshop
-│   └── chrome.html               # Chrome shortcuts específicos
-├── 
-└── 📝 Blog Educativo:
-    ├── blog.html                 # Página principal del blog
-    ├── blog-10-atajos-excel-contabilidad.html
-    ├── blog-como-hacer-captura-pantalla-atajos.html
-    └── blog-atajos-ocultos-photoshop.html
+│   └── windows-11.html           # Novedades y atajos de Windows 11
+├── excel/
+│   ├── index.html                # Atajos de Excel (general)
+│   ├── basico.html               # Excel para principiantes
+│   └── avanzado.html             # Excel avanzado
+├── word/
+│   ├── index.html                # Atajos de Word (general)
+│   ├── basico.html               # Word básico
+│   └── avanzado.html             # Word avanzado
+├── mac/
+│   └── index.html                # Atajos de macOS
+├── navegadores/
+│   └── index.html                # Atajos de Chrome, Edge, Firefox
+├── photoshop/
+│   └── index.html                # Atajos de Adobe Photoshop
+└── blog/
+    ├── index.html                # Página principal del blog
+    └── 10-atajos-excel-contabilidad.html
 ```
 
 ## 🎯 Objetivos SEO y Contenido
@@ -113,7 +112,6 @@ Una web educativa completa sobre atajos de teclado con estructura SEO avanzada, 
 - **Minificación de assets** para mejor rendimiento
 
 ### Funcionalidades JavaScript
-- **Dark mode** con localStorage persistente
 - **Búsqueda dinámica** con filtrado en tiempo real
 - **Intersection Observer** para animaciones al scroll
 - **Clipboard API** para copiar atajos
@@ -143,8 +141,7 @@ Una web educativa completa sobre atajos de teclado con estructura SEO avanzada, 
 1. **Navegación principal**: Usa el menú superior para acceder a categorías
 2. **Búsqueda rápida**: Utiliza las barras de búsqueda en cada página
 3. **Copia atajos**: Haz clic en cualquier fila de tabla para copiar al portapapeles
-4. **Dark mode**: Toggle en la esquina superior derecha
-5. **Mobile friendly**: Funciona perfectamente en dispositivos móviles
+4. **Mobile friendly**: Funciona perfectamente en dispositivos móviles
 
 ### Para Desarrolladores
 1. **Añadir atajos**: Modifica `js/shortcuts-data.js`
@@ -231,13 +228,12 @@ Una web educativa completa sobre atajos de teclado con estructura SEO avanzada, 
 - **Más completo**: 200+ atajos vs 50-100 de competidores
 - **Mejor organización**: Estructura jerárquica clara  
 - **SEO superior**: Schema markup y optimización técnica avanzada
-- **UX excepcional**: Búsqueda, copia automática, dark mode
+ - **UX excepcional**: Búsqueda, copia automática
 - **Contenido educativo**: Blog con guías prácticas y casos reales
 
 ### 🎖️ Diferenciadores Técnicos
 - **Performance óptimo**: Carga rápida sin frameworks pesados
 - **Accesibilidad**: Cumple estándares WCAG 2.1
-- **Mobile-first**: Diseño pensado primero para móviles
 - **Escalabilidad**: Arquitectura modular fácil de mantener
 - **SEO técnico**: Implementación completa de mejores prácticas
 
