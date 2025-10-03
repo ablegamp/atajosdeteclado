@@ -13,52 +13,17 @@ class KeyboardShortcutsApp {
 
     // ============ Gestión de Tema (Dark Mode) ============
     initTheme() {
-        // Verificar tema guardado o preferencia del sistema
-        const savedTheme = localStorage.getItem('theme');
-        const systemPrefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
-        
-        if (savedTheme) {
-            this.setTheme(savedTheme);
-        } else if (systemPrefersDark) {
-            this.setTheme('dark');
-        } else {
-            this.setTheme('light');
-        }
-
-        // Configurar toggle button
-        const themeToggle = document.getElementById('theme-toggle');
-        if (themeToggle) {
-            themeToggle.addEventListener('click', () => this.toggleTheme());
-        }
-
-        // Escuchar cambios en preferencias del sistema
-        window.matchMedia('(prefers-color-scheme: dark)')
-            .addEventListener('change', (e) => {
-                if (!localStorage.getItem('theme')) {
-                    this.setTheme(e.matches ? 'dark' : 'light');
-                }
-            });
+        // Forzar tema claro y desactivar modo oscuro completamente
+        document.documentElement.setAttribute('data-theme', 'light');
+        // Limpiar cualquier preferencia persistida anterior (si existiera)
+        try { localStorage.removeItem('theme'); } catch (e) {}
     }
 
     setTheme(theme) {
+        // Mantener por compatibilidad, pero solo fija el atributo de tema
         document.documentElement.setAttribute('data-theme', theme);
-        localStorage.setItem('theme', theme);
-        
-        // Actualizar icono del toggle
-        const themeToggle = document.getElementById('theme-toggle');
-        if (themeToggle) {
-            const icon = themeToggle.querySelector('i');
-            if (icon) {
-                icon.className = theme === 'dark' ? 'fas fa-sun' : 'fas fa-moon';
-            }
-        }
     }
 
-    toggleTheme() {
-        const currentTheme = document.documentElement.getAttribute('data-theme');
-        const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
-        this.setTheme(newTheme);
-    }
 
     // ============ Navegación ============
     initNavigation() {
