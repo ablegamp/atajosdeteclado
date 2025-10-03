@@ -217,8 +217,8 @@ Una web educativa completa sobre atajos de teclado con estructura SEO avanzada, 
 
 **Versión Actual**: 1.0.0  
 **Estado**: ✅ **Producción Ready**  
-**Última Actualización**: Enero 2024  
-**Próxima Release**: v1.1.0 (Febrero 2024)
+**Última Actualización**: Octubre 2025  
+**Próxima Release**: v1.1.0 (Noviembre 2025)
 
 ---
 
