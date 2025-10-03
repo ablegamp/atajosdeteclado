@@ -88,15 +88,16 @@ class KeyboardShortcutsApp {
     // ============ Búsqueda de Atajos ============
     initShortcutSearch() {
         const searchInput = document.getElementById('shortcut-search');
-        const shortcutTable = document.querySelector('.shortcuts-table tbody');
+        const tableBodies = document.querySelectorAll('.shortcuts-table tbody');
         
-        if (!searchInput || !shortcutTable) return;
+        if (!searchInput || !tableBodies.length) return;
 
         let searchTimeout;
         searchInput.addEventListener('input', (e) => {
             clearTimeout(searchTimeout);
+            const term = e.target.value.toLowerCase();
             searchTimeout = setTimeout(() => {
-                this.filterShortcuts(e.target.value.toLowerCase(), shortcutTable);
+                tableBodies.forEach(tb => this.filterShortcuts(term, tb));
             }, 300);
         });
     }
