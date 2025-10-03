@@ -3,17 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
+
     <!-- SEO Meta Tags -->
     <title>Atajos de Mac - Shortcuts para macOS y Sistema Operativo Apple 2024</title>
     <meta name="description" content="Descubre más de 40 atajos de Mac esenciales para macOS. Desde Finder hasta Mission Control, mejora tu productividad en Mac.">
     <meta name="keywords" content="atajos Mac, shortcuts macOS, combinaciones teclas Mac, Finder, Mission Control, productividad Mac">
     <meta name="author" content="Atajos de Teclado">
     <meta name="robots" content="index, follow">
-    
+
     <!-- CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="../css/main.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 </head>
@@ -24,7 +24,7 @@
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex justify-between items-center py-4">
                 <div class="flex items-center space-x-2">
-                    <a href="index.html" class="flex items-center space-x-2">
+                    <a href="../index.html" class="flex items-center space-x-2">
                         <div class="w-10 h-10 bg-gradient-to-br from-blue-600 to-purple-600 rounded-lg flex items-center justify-center">
                             <i class="fas fa-keyboard text-white text-lg"></i>
                         </div>
@@ -34,18 +34,18 @@
                         </div>
                     </a>
                 </div>
-                
+
                 <nav class="hidden md:flex space-x-1">
-                    <a href="index.html" class="nav-link">Inicio</a>
-                    <a href="windows.html" class="nav-link">Windows</a>
-                    <a href="excel.html" class="nav-link">Excel</a>
-                    <a href="word.html" class="nav-link">Word</a>
-                    <a href="mac.html" class="nav-link active">Mac</a>
-                    <a href="navegadores.html" class="nav-link">Navegadores</a>
-                    <a href="photoshop.html" class="nav-link">Photoshop</a>
-                    <a href="blog.html" class="nav-link">Blog</a>
+                    <a href="../index.html" class="nav-link">Inicio</a>
+                    <a href="../windows/index.html" class="nav-link">Windows</a>
+                    <a href="../excel/index.html" class="nav-link">Excel</a>
+                    <a href="../word/index.html" class="nav-link">Word</a>
+                    <a href="index.html" class="nav-link active">Mac</a>
+                    <a href="../navegadores/index.html" class="nav-link">Navegadores</a>
+                    <a href="../photoshop/index.html" class="nav-link">Photoshop</a>
+                    <a href="../blog/index.html" class="nav-link">Blog</a>
                 </nav>
-                
+
                 <div class="flex items-center space-x-3">
                     <button id="theme-toggle" class="theme-toggle" aria-label="Cambiar tema">
                         <i class="fas fa-moon"></i>
@@ -56,6 +56,17 @@
     </header>
 
     <main>
+        <!-- Breadcrumb -->
+        <div class="bg-gray-50 py-4">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <nav class="breadcrumb">
+                    <a href="../index.html">Inicio</a>
+                    <span>/</span>
+                    <span>Mac</span>
+                </nav>
+            </div>
+        </div>
+
         <!-- Hero Section -->
         <section class="py-16 bg-gradient-to-br from-gray-600 to-gray-800 text-white">
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -221,7 +232,7 @@
     </footer>
 
     <!-- JavaScript -->
-    <script src="js/shortcuts-data.js"></script>
-    <script src="js/main.js"></script>
+    <script src="../js/shortcuts-data.js"></script>
+    <script src="../js/main.js"></script>
 </body>
 </html>
