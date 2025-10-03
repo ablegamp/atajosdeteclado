@@ -1,0 +1,293 @@
+// ==========================================================================
+// Atajos de Teclado - JavaScript Principal
+// ==========================================================================
+
+class KeyboardShortcutsApp {
+    constructor() {
+        this.initTheme();
+        this.initNavigation();
+        this.initShortcutSearch();
+        this.initAnimations();
+        this.loadShortcuts();
+    }
+
+    // ============ Gestión de Tema (Dark Mode) ============
+    initTheme() {
+        // Verificar tema guardado o preferencia del sistema
+        const savedTheme = localStorage.getItem('theme');
+        const systemPrefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+        
+        if (savedTheme) {
+            this.setTheme(savedTheme);
+        } else if (systemPrefersDark) {
+            this.setTheme('dark');
+        } else {
+            this.setTheme('light');
+        }
+
+        // Configurar toggle button
+        const themeToggle = document.getElementById('theme-toggle');
+        if (themeToggle) {
+            themeToggle.addEventListener('click', () => this.toggleTheme());
+        }
+
+        // Escuchar cambios en preferencias del sistema
+        window.matchMedia('(prefers-color-scheme: dark)')
+            .addEventListener('change', (e) => {
+                if (!localStorage.getItem('theme')) {
+                    this.setTheme(e.matches ? 'dark' : 'light');
+                }
+            });
+    }
+
+    setTheme(theme) {
+        document.documentElement.setAttribute('data-theme', theme);
+        localStorage.setItem('theme', theme);
+        
+        // Actualizar icono del toggle
+        const themeToggle = document.getElementById('theme-toggle');
+        if (themeToggle) {
+            const icon = themeToggle.querySelector('i');
+            if (icon) {
+                icon.className = theme === 'dark' ? 'fas fa-sun' : 'fas fa-moon';
+            }
+        }
+    }
+
+    toggleTheme() {
+        const currentTheme = document.documentElement.getAttribute('data-theme');
+        const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+        this.setTheme(newTheme);
+    }
+
+    // ============ Navegación ============
+    initNavigation() {
+        // Marcar enlace activo basado en la URL actual
+        const currentPath = window.location.pathname;
+        const navLinks = document.querySelectorAll('.nav-link');
+        
+        navLinks.forEach(link => {
+            const href = link.getAttribute('href');
+            if (href && (currentPath.includes(href.replace('.html', '')) || 
+                        (currentPath === '/' && href === 'index.html'))) {
+                link.classList.add('active');
+            }
+        });
+
+        // Mobile menu toggle
+        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        
+        if (mobileMenuBtn && mobileMenu) {
+            mobileMenuBtn.addEventListener('click', () => {
+                mobileMenu.classList.toggle('hidden');
+            });
+        }
+    }
+
+    // ============ Búsqueda de Atajos ============
+    initShortcutSearch() {
+        const searchInput = document.getElementById('shortcut-search');
+        const shortcutTable = document.querySelector('.shortcuts-table tbody');
+        
+        if (!searchInput || !shortcutTable) return;
+
+        let searchTimeout;
+        searchInput.addEventListener('input', (e) => {
+            clearTimeout(searchTimeout);
+            searchTimeout = setTimeout(() => {
+                this.filterShortcuts(e.target.value.toLowerCase(), shortcutTable);
+            }, 300);
+        });
+    }
+
+    filterShortcuts(searchTerm, tableBody) {
+        const rows = tableBody.querySelectorAll('tr');
+        
+        rows.forEach(row => {
+            const text = row.textContent.toLowerCase();
+            if (text.includes(searchTerm)) {
+                row.style.display = '';
+                row.classList.add('animate-fade-in');
+            } else {
+                row.style.display = 'none';
+                row.classList.remove('animate-fade-in');
+            }
+        });
+    }
+
+    // ============ Animaciones ============
+    initAnimations() {
+        // Intersection Observer para animaciones al scroll
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('animate-fade-in');
+                }
+            });
+        }, {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        });
+
+        // Observar elementos que deben animarse
+        const animatedElements = document.querySelectorAll('.card, .shortcuts-table, .hero-section');
+        animatedElements.forEach(el => observer.observe(el));
+    }
+
+    // ============ Carga de Atajos ============
+    async loadShortcuts() {
+        try {
+            // Cargar datos de atajos si existe un contenedor para ellos
+            const shortcutContainer = document.getElementById('shortcuts-data');
+            if (shortcutContainer && window.shortcutsData) {
+                this.renderShortcuts(window.shortcutsData);
+            }
+        } catch (error) {
+            console.error('Error cargando atajos:', error);
+        }
+    }
+
+    renderShortcuts(data) {
+        const tableBody = document.querySelector('.shortcuts-table tbody');
+        if (!tableBody || !data) return;
+
+        tableBody.innerHTML = '';
+        
+        data.forEach(shortcut => {
+            const row = this.createShortcutRow(shortcut);
+            tableBody.appendChild(row);
+        });
+    }
+
+    createShortcutRow(shortcut) {
+        const row = document.createElement('tr');
+        
+        row.innerHTML = `
+            <td class="font-medium">${shortcut.action}</td>
+            <td class="key-combo">${this.formatKeyCombo(shortcut.keys)}</td>
+            <td class="text-sm text-gray-600">${shortcut.description}</td>
+        `;
+        
+        return row;
+    }
+
+    formatKeyCombo(keys) {
+        if (Array.isArray(keys)) {
+            return keys.map(key => `<span class="key">${key}</span>`).join(' + ');
+        }
+        
+        // Si es string, separar por + y formatear
+        return keys.split(' + ')
+            .map(key => `<span class="key">${key.trim()}</span>`)
+            .join(' + ');
+    }
+
+    // ============ Utilidades ============
+    
+    // Copiar atajo al clipboard
+    copyShortcut(element) {
+        const keyCombo = element.querySelector('.key-combo');
+        if (keyCombo) {
+            const text = keyCombo.textContent.replace(/\s+/g, ' ').trim();
+            
+            navigator.clipboard.writeText(text).then(() => {
+                this.showToast('¡Atajo copiado!');
+            }).catch(() => {
+                // Fallback para navegadores sin soporte
+                const textArea = document.createElement('textarea');
+                textArea.value = text;
+                document.body.appendChild(textArea);
+                textArea.select();
+                document.execCommand('copy');
+                document.body.removeChild(textArea);
+                this.showToast('¡Atajo copiado!');
+            });
+        }
+    }
+
+    // Mostrar notificación toast
+    showToast(message, type = 'success') {
+        const toast = document.createElement('div');
+        toast.className = `
+            fixed top-4 right-4 z-50 px-4 py-2 rounded-lg shadow-lg
+            ${type === 'success' ? 'bg-green-500' : 'bg-red-500'} 
+            text-white font-medium animate-fade-in
+        `;
+        toast.textContent = message;
+        
+        document.body.appendChild(toast);
+        
+        setTimeout(() => {
+            toast.style.opacity = '0';
+            toast.style.transform = 'translateX(100%)';
+            setTimeout(() => document.body.removeChild(toast), 300);
+        }, 3000);
+    }
+
+    // Analytics básico (sin tracking externo)
+    trackEvent(category, action, label = '') {
+        console.log(`Event: ${category} - ${action} - ${label}`);
+        // Aquí podrías integrar Google Analytics u otra solución
+    }
+}
+
+// ============ Utilidades Globales ============
+
+// Formatear teclas especiales
+function formatSpecialKeys(text) {
+    const keyMap = {
+        'cmd': '⌘',
+        'ctrl': 'Ctrl',
+        'alt': 'Alt',
+        'shift': '⇧',
+        'enter': '↵',
+        'tab': '⇥',
+        'esc': 'Esc',
+        'space': 'Space',
+        'up': '↑',
+        'down': '↓',
+        'left': '←',
+        'right': '→'
+    };
+    
+    let formatted = text.toLowerCase();
+    Object.keys(keyMap).forEach(key => {
+        formatted = formatted.replace(new RegExp(key, 'gi'), keyMap[key]);
+    });
+    
+    return formatted;
+}
+
+// Detectar sistema operativo
+function detectOS() {
+    const userAgent = navigator.userAgent.toLowerCase();
+    
+    if (userAgent.includes('mac')) return 'mac';
+    if (userAgent.includes('win')) return 'windows';
+    if (userAgent.includes('linux')) return 'linux';
+    
+    return 'unknown';
+}
+
+// Inicializar aplicación cuando el DOM esté listo
+document.addEventListener('DOMContentLoaded', () => {
+    // Inicializar aplicación principal
+    window.keyboardApp = new KeyboardShortcutsApp();
+    
+    // Añadir clase de OS para estilos específicos
+    document.body.classList.add(`os-${detectOS()}`);
+    
+    // Configurar eventos globales
+    document.addEventListener('click', (e) => {
+        // Copiar atajos al hacer clic
+        if (e.target.closest('.shortcuts-table tr')) {
+            const row = e.target.closest('tr');
+            if (row && !e.target.closest('a')) {
+                window.keyboardApp.copyShortcut(row);
+            }
+        }
+    });
+    
+    console.log('🎹 Atajos de Teclado App iniciada correctamente');
+});

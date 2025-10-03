@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="es" itemscope itemtype="https://schema.org/WebPage">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- SEO Meta Tags -->
+    <title>Excel Básico - Atajos Esenciales para Principiantes 2024</title>
+    <meta name="description" content="Aprende los atajos básicos de Excel para principiantes. Navegación, edición y fórmulas simples. Perfecto para empezar con hojas de cálculo.">
+    <meta name="keywords" content="Excel básico, atajos Excel principiantes, shortcuts Excel fácil, aprender Excel">
+    
+    <!-- CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+
+<body class="bg-white text-gray-900">
+    <!-- Header -->
+    <header class="header-sticky bg-white/90 backdrop-blur-sm border-b border-gray-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center py-4">
+                <div class="flex items-center space-x-2">
+                    <a href="index.html" class="flex items-center space-x-2">
+                        <div class="w-10 h-10 bg-gradient-to-br from-blue-600 to-purple-600 rounded-lg flex items-center justify-center">
+                            <i class="fas fa-keyboard text-white text-lg"></i>
+                        </div>
+                        <div>
+                            <h1 class="text-xl font-bold text-gray-900">Atajos de Teclado</h1>
+                        </div>
+                    </a>
+                </div>
+                
+                <nav class="hidden md:flex space-x-1">
+                    <a href="index.html" class="nav-link">Inicio</a>
+                    <a href="windows.html" class="nav-link">Windows</a>
+                    <a href="excel.html" class="nav-link">Excel</a>
+                    <a href="word.html" class="nav-link">Word</a>
+                    <a href="mac.html" class="nav-link">Mac</a>
+                    <a href="navegadores.html" class="nav-link">Navegadores</a>
+                    <a href="photoshop.html" class="nav-link">Photoshop</a>
+                    <a href="blog.html" class="nav-link">Blog</a>
+                </nav>
+                
+                <button id="theme-toggle" class="theme-toggle" aria-label="Cambiar tema">
+                    <i class="fas fa-moon"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Breadcrumb -->
+        <div class="bg-gray-50 py-4">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <nav class="breadcrumb">
+                    <a href="index.html">Inicio</a>
+                    <span>/</span>
+                    <a href="excel.html">Excel</a>
+                    <span>/</span>
+                    <span>Básico</span>
+                </nav>
+            </div>
+        </div>
+
+        <!-- Hero Section -->
+        <section class="py-16 bg-gradient-to-br from-green-500 to-green-700 text-white">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="flex items-center mb-8">
+                    <div class="w-16 h-16 bg-white/20 rounded-2xl flex items-center justify-center mr-6">
+                        <i class="fas fa-play text-3xl"></i>
+                    </div>
+                    <div>
+                        <h1 class="text-4xl lg:text-5xl font-bold mb-4">
+                            Excel Básico
+                        </h1>
+                        <p class="text-xl text-green-100 max-w-3xl">
+                            Atajos esenciales para empezar con Excel. Navegación, edición básica y primeras fórmulas para principiantes.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="bg-white/10 backdrop-blur-sm rounded-xl p-6 inline-block">
+                    <div class="flex items-center">
+                        <i class="fas fa-graduation-cap text-xl mr-3"></i>
+                        <span class="font-semibold">Nivel: Principiante</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Primeros Pasos -->
+        <section class="py-16">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl font-bold text-gray-900 mb-4">
+                        <i class="fas fa-rocket text-green-500 mr-3"></i>
+                        Primeros Pasos
+                    </h2>
+                    <p class="text-xl text-gray-600">
+                        Los atajos más importantes para empezar
+                    </p>
+                </div>
+
+                <div class="bg-white rounded-2xl shadow-lg overflow-hidden">
+                    <table class="shortcuts-table">
+                        <thead>
+                            <tr>
+                                <th class="w-1/3">Acción</th>
+                                <th class="w-1/3">Combinación</th>
+                                <th class="w-1/3">¿Para qué sirve?</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="font-medium">Confirmar entrada</td>
+                                <td class="key-combo"><span class="key">Enter</span></td>
+                                <td>Acepta lo que escribiste y baja una celda</td>
+                            </tr>
+                            <tr>
+                                <td class="font-medium">Cancelar entrada</td>
+                                <td class="key-combo"><span class="key">Esc</span></td>
+                                <td>Cancela lo que estás escribiendo</td>
+                            </tr>
+                            <tr>
+                                <td class="font-medium">Editar celda</td>
+                                <td class="key-combo"><span class="key">F2</span></td>
+                                <td>Permite editar el contenido de la celda</td>
+                            </tr>
+                            <tr>
+                                <td class="font-medium">Ir a inicio</td>
+                                <td class="key-combo"><span class="key">Ctrl</span> + <span class="key">Home</span></td>
+                                <td>Te lleva a la celda A1</td>
+                            </tr>
+                            <tr>
+                                <td class="font-medium">Seleccionar todo</td>
+                                <td class="key-combo"><span class="key">Ctrl</span> + <span class="key">A</span></td>
+                                <td>Selecciona toda la hoja</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+
+        <!-- Navegación Simple -->
+        <section class="py-16 bg-gray-50">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl font-bold text-gray-900 mb-4">
+                        <i class="fas fa-arrows-alt text-blue-500 mr-3"></i>
+                        Moverse por Excel
+                    </h2>
+                    <p class="text-xl text-gray-600">
+                        Navega sin usar el ratón
+                    </p>
+                </div>
+
+                <div class="bg-white rounded-2xl shadow-lg overflow-hidden">
+                    <table class="shortcuts-table">
+                        <thead>
+                            <tr>
+                                <th class="w-1/3">Movimiento</th>
+                                <th class="w-1/3">Teclas</th>
+                                <th class="w-1/3">Resultado</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="font-medium">Una celda abajo</td>
+                                <td class="key-combo"><span class="key">↓</span> o <span class="key">Enter</span></td>
+                                <td>Baja una fila</td>
+                            </tr>
+                            <tr>
+                                <td class="font-medium">Una celda arriba</td>
+                                <td class="key-combo"><span class="key">↑</span></td>
+                                <td>Sube una fila</td>
+                            </tr>
+                            <tr>
+                                <td class="font-medium">Una celda derecha</td>
+                                <td class="key-combo"><span class="key">→</span> o <span class="key">Tab</span></td>
+                                <td>Se mueve a la derecha</td>
+                            </tr>
+                            <tr>
+                                <td class="font-medium">Una celda izquierda</td>
+                                <td class="key-combo"><span class="key">←</span> o <span class="key">Shift</span> + <span class="key">Tab</span></td>
+                                <td>Se mueve a la izquierda</td>
+                            </tr>
+                            <tr>
+                                <td class="font-medium">Final de datos</td>
+                                <td class="key-combo"><span class="key">Ctrl</span> + <span class="key">→</span></td>
+                                <td>Va al final de los datos en esa fila</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+
+        <!-- Fórmulas Básicas -->
+        <section class="py-16">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl font-bold text-gray-900 mb-4">
+                        <i class="fas fa-calculator text-purple-500 mr-3"></i>
+                        Primeras Fórmulas
+                    </h2>
+                    <p class="text-xl text-gray-600">
+                        Aprende a hacer cálculos básicos
+                    </p>
+                </div>
+
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-12">
+                    <div class="bg-gradient-to-br from-purple-100 to-purple-200 p-8 rounded-2xl">
+                        <h3 class="text-2xl font-semibold mb-4 text-purple-800">
+                            <i class="fas fa-lightbulb mr-2"></i>
+                            ¿Cómo empezar?
+                        </h3>
+                        <ul class="space-y-3 text-purple-700">
+                            <li class="flex items-start">
+                                <i class="fas fa-check-circle text-purple-600 mr-2 mt-1"></i>
+                                <span>Todas las fórmulas empiezan con <strong>=</strong></span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check-circle text-purple-600 mr-2 mt-1"></i>
+                                <span>Usa referencias como A1, B2, C3...</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check-circle text-purple-600 mr-2 mt-1"></i>
+                                <span>Presiona Enter para confirmar</span>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="bg-gradient-to-br from-green-100 to-green-200 p-8 rounded-2xl">
+                        <h3 class="text-2xl font-semibold mb-4 text-green-800">
+                            <i class="fas fa-star mr-2"></i>
+                            Fórmulas Esenciales
+                        </h3>
+                        <ul class="space-y-3 text-green-700">
+                            <li><span class="font-mono bg-green-300 px-2 py-1 rounded">=A1+B1</span> → Suma</li>
+                            <li><span class="font-mono bg-green-300 px-2 py-1 rounded">=A1-B1</span> → Resta</li>
+                            <li><span class="font-mono bg-green-300 px-2 py-1 rounded">=A1*B1</span> → Multiplicación</li>
+                            <li><span class="font-mono bg-green-300 px-2 py-1 rounded">=A1/B1</span> → División</li>
+                            <li><span class="font-mono bg-green-300 px-2 py-1 rounded">=SUMA(A1:A10)</span> → Suma rango</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-2xl shadow-lg overflow-hidden">
+                    <table class="shortcuts-table">
+                        <thead>
+                            <tr>
+                                <th class="w-1/3">Acción</th>
+                                <th class="w-1/3">Atajo</th>
+                                <th class="w-1/3">Resultado</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="font-medium">Suma automática</td>
+                                <td class="key-combo"><span class="key">Alt</span> + <span class="key">=</span></td>
+                                <td>Excel adivina qué celdas sumar</td>
+                            </tr>
+                            <tr>
+                                <td class="font-medium">Copiar fórmula abajo</td>
+                                <td class="key-combo"><span class="key">Ctrl</span> + <span class="key">D</span></td>
+                                <td>Copia la fórmula hacia abajo</td>
+                            </tr>
+                            <tr>
+                                <td class="font-medium">Copiar fórmula derecha</td>
+                                <td class="key-combo"><span class="key">Ctrl</span> + <span class="key">R</span></td>
+                                <td>Copia la fórmula hacia la derecha</td>
+                            </tr>
+                            <tr>
+                                <td class="font-medium">Ver fórmulas</td>
+                                <td class="key-combo"><span class="key">Ctrl</span> + <span class="key">`</span></td>
+                                <td>Muestra las fórmulas en lugar de resultados</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+
+        <!-- Consejos para Principiantes -->
+        <section class="py-16 bg-gradient-to-r from-green-500 to-blue-500 text-white">
+            <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl font-bold mb-4">
+                        <i class="fas fa-tips mr-3"></i>
+                        Consejos de Oro para Principiantes
+                    </h2>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <div class="bg-white/10 backdrop-blur-sm p-6 rounded-xl">
+                        <h3 class="text-xl font-semibold mb-3">
+                            <i class="fas fa-clock mr-2"></i>
+                            Práctica Diaria
+                        </h3>
+                        <p class="text-green-100">
+                            Dedica 10 minutos al día a practicar estos atajos. En una semana verás la diferencia.
+                        </p>
+                    </div>
+                    <div class="bg-white/10 backdrop-blur-sm p-6 rounded-xl">
+                        <h3 class="text-xl font-semibold mb-3">
+                            <i class="fas fa-save mr-2"></i>
+                            Guarda Frecuentemente
+                        </h3>
+                        <p class="text-green-100">
+                            Usa Ctrl + S constantemente. No pierdas tu trabajo por no guardar.
+                        </p>
+                    </div>
+                    <div class="bg-white/10 backdrop-blur-sm p-6 rounded-xl">
+                        <h3 class="text-xl font-semibold mb-3">
+                            <i class="fas fa-undo mr-2"></i>
+                            No Tengas Miedo
+                        </h3>
+                        <p class="text-green-100">
+                            Siempre puedes deshacer con Ctrl + Z. Experimenta sin miedo.
+                        </p>
+                    </div>
+                    <div class="bg-white/10 backdrop-blur-sm p-6 rounded-xl">
+                        <h3 class="text-xl font-semibold mb-3">
+                            <i class="fas fa-step-forward mr-2"></i>
+                            Paso a Paso
+                        </h3>
+                        <p class="text-green-100">
+                            Aprende 3-5 atajos por semana. No intentes memorizar todo a la vez.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="text-center mt-8">
+                    <a href="excel-avanzado.html" class="btn-primary bg-white text-green-600 hover:bg-gray-100">
+                        <i class="fas fa-arrow-right mr-2"></i>
+                        Continúa con Excel Avanzado
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center">
+                <p class="text-gray-400">© 2024 Atajos de Teclado. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="js/shortcuts-data.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
