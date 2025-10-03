@@ -68,7 +68,9 @@ Una web educativa completa sobre atajos de teclado con estructura SEO avanzada, 
 │   ├── basico.html               # Word básico
 │   └── avanzado.html             # Word avanzado
 ├── mac/
-│   └── index.html                # Atajos de macOS
+│   ├── index.html                # Atajos de macOS
+│   ├── basico.html               # Mac básico
+│   └── avanzado.html             # Mac avanzado
 ├── navegadores/
 │   └── index.html                # Atajos de Chrome, Edge, Firefox
 ├── photoshop/

@@ -8,6 +8,8 @@ class KeyboardShortcutsApp {
         this.initNavigation();
         this.initShortcutSearch();
         this.initAnimations();
+        this.initBackToTop();
+        this.addGlobalInterlinks();
         this.loadShortcuts();
     }
 
@@ -189,6 +191,89 @@ class KeyboardShortcutsApp {
             toast.style.transform = 'translateX(100%)';
             setTimeout(() => document.body.removeChild(toast), 300);
         }, 3000);
+    }
+
+    // Botón global "Volver arriba"
+    initBackToTop() {
+        // Evitar duplicados
+        if (document.getElementById('back-to-top')) return;
+        const btn = document.createElement('button');
+        btn.id = 'back-to-top';
+        btn.className = 'hidden';
+        btn.setAttribute('aria-label', 'Volver arriba');
+        btn.innerHTML = '<i class="fas fa-arrow-up"></i>';
+        document.body.appendChild(btn);
+
+        const toggle = () => {
+            const show = window.scrollY > 300;
+            btn.classList.toggle('show', show);
+            btn.classList.toggle('hidden', !show);
+        };
+        window.addEventListener('scroll', toggle, { passive: true });
+        toggle();
+
+        btn.addEventListener('click', () => {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+    }
+
+    // Interlinking automático global (ligero)
+    addGlobalInterlinks() {
+        try {
+            if (document.getElementById('global-interlinks')) return;
+            const main = document.querySelector('main');
+            if (!main) return;
+
+            const path = window.location.pathname;
+            const parts = path.split('/').filter(Boolean); // e.g., ["windows", "windows-10.html"]
+            const prefix = parts.length >= 1 ? '../' : '';
+
+            const links = [];
+            const add = (href, label) => links.push({ href, label });
+
+            const isRoot = parts.length === 0 || (parts.length === 1 && parts[0] === 'index.html');
+            if (isRoot) return; // home no necesita bloque extra
+
+            const isSection = parts.length === 1; // /windows/index.html? -> sería 1 o 2; mantenemos simple
+            const inDir = parts.length >= 1; // estamos en subcarpeta casi siempre
+
+            // Enlace a Inicio relativo a raíz
+            add(prefix + 'index.html', 'Inicio');
+
+            // Enlaces comunes desde subpáginas
+            add('../windows/index.html', 'Atajos Windows');
+            add('../excel/index.html', 'Atajos Excel');
+            add('../word/index.html', 'Atajos Word');
+            add('../mac/index.html', 'Atajos Mac');
+            add('../navegadores/index.html', 'Atajos Navegadores');
+            add('../photoshop/index.html', 'Atajos Photoshop');
+
+            // Eliminar duplicados por label
+            const seen = new Set();
+            const dedup = links.filter(l => !seen.has(l.label) && seen.add(l.label));
+
+            const section = document.createElement('section');
+            section.id = 'global-interlinks';
+            section.className = 'py-12';
+            section.innerHTML = `
+                <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                    <div class="bg-white rounded-2xl shadow-lg p-6">
+                        <h2 class="text-2xl font-bold text-gray-900 mb-4">Explora también</h2>
+                        <div class="flex flex-wrap gap-3">
+                            ${dedup.map(l => `<a href="${l.href}" class="btn-secondary">${l.label}</a>`).join('')}
+                        </div>
+                    </div>
+                </div>`;
+
+            const footer = document.querySelector('footer');
+            if (footer && footer.parentNode === document.body) {
+                document.body.insertBefore(section, footer);
+            } else {
+                main.appendChild(section);
+            }
+        } catch (e) {
+            console.warn('Interlinking no añadido:', e);
+        }
     }
 
     // Analytics básico (sin tracking externo)
