@@ -72,7 +72,10 @@ Una web educativa completa sobre atajos de teclado con estructura SEO avanzada, 
 │   ├── basico.html               # Mac básico
 │   └── avanzado.html             # Mac avanzado
 ├── navegadores/
-│   └── index.html                # Atajos de Chrome, Edge, Firefox
+│   ├── index.html                # Atajos de Chrome, Edge, Firefox
+│   ├── chrome.html               # Atajos de Google Chrome
+│   ├── edge.html                 # Atajos de Microsoft Edge
+│   └── firefox.html              # Atajos de Mozilla Firefox
 ├── photoshop/
 │   └── index.html                # Atajos de Adobe Photoshop
 └── blog/

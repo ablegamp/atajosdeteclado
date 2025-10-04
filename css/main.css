@@ -272,9 +272,44 @@ body {
 .prose p {
   color: var(--text-secondary);
 }
-
 /* Footer */
 .footer-link {
   color: var(--text-secondary);
   text-decoration: none;
+}
+
+/* Botón global: Volver arriba */
+#back-to-top {
+  position: fixed;
+  right: 1rem;
+  bottom: 1rem;
+  z-index: 60;
+  width: 3rem;
+  height: 3rem;
+  border-radius: 0.75rem;
+  background-color: var(--accent-primary);
+  color: #fff;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: var(--shadow-medium);
+  cursor: pointer;
+  transition: opacity 0.2s ease, transform 0.2s ease, background-color 0.2s ease;
+  opacity: 0;
+  transform: translateY(8px);
+}
+
+#back-to-top:hover {
+  background-color: var(--accent-hover);
+  transform: translateY(4px);
+}
+
+#back-to-top.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+#back-to-top.hidden {
+  pointer-events: none;
 }

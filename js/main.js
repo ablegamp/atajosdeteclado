@@ -224,29 +224,25 @@ class KeyboardShortcutsApp {
             const main = document.querySelector('main');
             if (!main) return;
 
-            const path = window.location.pathname;
-            const parts = path.split('/').filter(Boolean); // e.g., ["windows", "windows-10.html"]
-            const prefix = parts.length >= 1 ? '../' : '';
+            const path = window.location.pathname.toLowerCase();
+            // Detectar si estamos dentro de una carpeta de sección, funciona con rutas locales file:// y http(s)
+            const sections = ['windows', 'excel', 'word', 'mac', 'navegadores', 'photoshop', 'blog'];
+            const inSubdir = sections.some(s => path.includes(`/${s}/`));
+            const prefix = inSubdir ? '../' : '';
 
             const links = [];
             const add = (href, label) => links.push({ href, label });
-
-            const isRoot = parts.length === 0 || (parts.length === 1 && parts[0] === 'index.html');
-            if (isRoot) return; // home no necesita bloque extra
-
-            const isSection = parts.length === 1; // /windows/index.html? -> sería 1 o 2; mantenemos simple
-            const inDir = parts.length >= 1; // estamos en subcarpeta casi siempre
 
             // Enlace a Inicio relativo a raíz
             add(prefix + 'index.html', 'Inicio');
 
             // Enlaces comunes desde subpáginas
-            add('../windows/index.html', 'Atajos Windows');
-            add('../excel/index.html', 'Atajos Excel');
-            add('../word/index.html', 'Atajos Word');
-            add('../mac/index.html', 'Atajos Mac');
-            add('../navegadores/index.html', 'Atajos Navegadores');
-            add('../photoshop/index.html', 'Atajos Photoshop');
+            add(prefix + 'windows/index.html', 'Atajos Windows');
+            add(prefix + 'excel/index.html', 'Atajos Excel');
+            add(prefix + 'word/index.html', 'Atajos Word');
+            add(prefix + 'mac/index.html', 'Atajos Mac');
+            add(prefix + 'navegadores/index.html', 'Atajos Navegadores');
+            add(prefix + 'photoshop/index.html', 'Atajos Photoshop');
 
             // Eliminar duplicados por label
             const seen = new Set();
