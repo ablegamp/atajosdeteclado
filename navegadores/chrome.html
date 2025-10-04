@@ -98,33 +98,12 @@
       </div>
     </nav>
 
-    <!-- FAQ visual -->
-    <section class="py-16 bg-gray-50">
-      <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-        <h2 class="text-2xl font-bold text-gray-900 mb-6">Preguntas frecuentes</h2>
-        <div class="space-y-4">
-          <details class="bg-white rounded-xl p-4 border border-gray-200">
-            <summary class="font-semibold cursor-pointer">¿Cómo abrir una nueva pestaña en Chrome?</summary>
-            <div class="mt-2 text-gray-700">Usa <span class="key">Ctrl</span> + <span class="key">T</span> (Windows) o <span class="key">Cmd</span> + <span class="key">T</span> (Mac).</div>
-          </details>
-          <details class="bg-white rounded-xl p-4 border border-gray-200">
-            <summary class="font-semibold cursor-pointer">¿Cómo reabrir la última pestaña cerrada?</summary>
-            <div class="mt-2 text-gray-700"><span class="key">Ctrl</span> + <span class="key">Shift</span> + <span class="key">T</span> (Windows) o <span class="key">Cmd</span> + <span class="key">Shift</span> + <span class="key">T</span> (Mac).</div>
-          </details>
-          <details class="bg-white rounded-xl p-4 border border-gray-200">
-            <summary class="font-semibold cursor-pointer">¿Cómo ver descargas rápidamente?</summary>
-            <div class="mt-2 text-gray-700"><span class="key">Ctrl</span> + <span class="key">J</span> (Windows) o <span class="key">Cmd</span> + <span class="key">J</span> (Mac).</div>
-          </details>
-        </div>
-      </div>
-    <!-- Pestañas -->
     <section id="pestanas" class="py-16">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="text-center mb-12">
           <h2 class="text-3xl font-bold text-gray-900 mb-4">
-            <i class="fas fa-history text-[#4285F4] mr-3"></i>
-            <i class="fas fa-download text-[#4285F4] mr-3"></i>
-            Historial y descargas
+            <i class="fas fa-layer-group text-green-600 mr-3"></i>
+            Pestañas
           </h2>
         </div>
         <div class="bg-white rounded-2xl shadow-lg overflow-hidden">
@@ -142,14 +121,14 @@
                 <td>Abrir nueva pestaña</td>
               </tr>
               <tr>
-                <td class="font-medium">Reabrir pestaña cerrada</td>
-                <td class="key-combo"><span class="key">Ctrl</span> + <span class="key">Shift</span> + <span class="key">T</span> / <span class="key">Cmd</span> + <span class="key">Shift</span> + <span class="key">T</span></td>
-                <td>Recuperar la última pestaña cerrada</td>
-              </tr>
-              <tr>
                 <td class="font-medium">Cambiar entre pestañas</td>
                 <td class="key-combo"><span class="key">Ctrl</span> + <span class="key">Tab</span> / <span class="key">Ctrl</span> + <span class="key">Shift</span> + <span class="key">Tab</span></td>
                 <td>Navegar por pestañas</td>
+              </tr>
+              <tr>
+                <td class="font-medium">Reabrir pestaña cerrada</td>
+                <td class="key-combo"><span class="key">Ctrl</span> + <span class="key">Shift</span> + <span class="key">T</span> / <span class="key">Cmd</span> + <span class="key">Shift</span> + <span class="key">T</span></td>
+                <td>Recuperar la última pestaña cerrada</td>
               </tr>
               <tr>
                 <td class="font-medium">Ir a pestaña (1–8)</td>
@@ -165,9 +144,105 @@
           </table>
         </div>
       </div>
+    <!-- Historial y Descargas -->
+    <section id="historial" class="py-8">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-12">
+          <h2 class="text-3xl font-bold text-gray-900 mb-4">
+            <i class="fas fa-history text-orange-600 mr-3"></i>
+            Historial y descargas
+          </h2>
+        </div>
+        <div class="bg-white rounded-2xl shadow-lg overflow-hidden">
+          <table class="shortcuts-table">
+            <thead>
+              <tr>
+                <th class="w-1/3">Acción</th>
+                <th class="w-1/3">Combinación</th>
+                <th class="w-1/3">Descripción</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="font-medium">Historial</td>
+                <td class="key-combo"><span class="key">Ctrl</span> + <span class="key">H</span> / <span class="key">Cmd</span> + <span class="key">Y</span></td>
+                <td>Abrir el historial de navegación</td>
+              </tr>
+              <tr>
+                <td class="font-medium">Descargas</td>
+                <td class="key-combo"><span class="key">Ctrl</span> + <span class="key">J</span> / <span class="key">Cmd</span> + <span class="key">J</span></td>
+                <td>Abrir la página de descargas</td>
+              </tr>
+              <tr>
+                <td class="font-medium">Atrás / Adelante</td>
+                <td class="key-combo"><span class="key">Alt</span> + <span class="key">←/→</span> / <span class="key">Cmd</span> + <span class="key">[/]</span></td>
+                <td>Navegar por el historial de la pestaña</td>
+              </tr>
+              <tr>
+                <td class="font-medium">Borrar datos de navegación</td>
+                <td class="key-combo"><span class="key">Ctrl</span> + <span class="key">Shift</span> + <span class="key">Delete</span> / <span class="key">Cmd</span> + <span class="key">Shift</span> + <span class="key">Delete</span></td>
+                <td>Abrir diálogo de borrado</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
     </section>
 
-    <!-- Interlinking -->
+    <!-- Herramientas -->
+    <section id="herramientas" class="py-8">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-12">
+          <h2 class="text-3xl font-bold text-gray-900 mb-4">
+            <i class="fas fa-tools text-purple-600 mr-3"></i>
+            Herramientas y opciones
+          </h2>
+        </div>
+        <div class="bg-white rounded-2xl shadow-lg overflow-hidden">
+          <table class="shortcuts-table">
+            <thead>
+              <tr>
+                <th class="w-1/3">Acción</th>
+                <th class="w-1/3">Combinación</th>
+                <th class="w-1/3">Descripción</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="font-medium">Buscar en página</td>
+                <td class="key-combo"><span class="key">Ctrl</span> + <span class="key">F</span> / <span class="key">Cmd</span> + <span class="key">F</span></td>
+                <td>Abrir búsqueda en la página</td>
+              </tr>
+              <tr>
+                <td class="font-medium">DevTools</td>
+                <td class="key-combo"><span class="key">Ctrl</span> + <span class="key">Shift</span> + <span class="key">I</span> / <span class="key">Cmd</span> + <span class="key">Opt</span> + <span class="key">I</span></td>
+                <td>Abrir herramientas de desarrollador</td>
+              </tr>
+              <tr>
+                <td class="font-medium">Barra de direcciones</td>
+                <td class="key-combo"><span class="key">Ctrl</span> + <span class="key">L</span> / <span class="key">Cmd</span> + <span class="key">L</span></td>
+                <td>Foco en la omnibox</td>
+              </tr>
+              <tr>
+                <td class="font-medium">Modo incógnito</td>
+                <td class="key-combo"><span class="key">Ctrl</span> + <span class="key">Shift</span> + <span class="key">N</span> / <span class="key">Cmd</span> + <span class="key">Shift</span> + <span class="key">N</span></td>
+                <td>Abrir nueva ventana de incógnito</td>
+              </tr>
+              <tr>
+                <td class="font-medium">Zoom +/- / reset</td>
+                <td class="key-combo"><span class="key">Ctrl</span> + <span class="key">+/−/0</span> / <span class="key">Cmd</span> + <span class="key">+/−/0</span></td>
+                <td>Acercar, alejar o restablecer zoom</td>
+              </tr>
+              <tr>
+                <td class="font-medium">Cerrar pestaña / ventana</td>
+                <td class="key-combo"><span class="key">Ctrl</span> + <span class="key">W</span> / <span class="key">Ctrl</span> + <span class="key">Shift</span> + <span class="key">W</span> — <span class="key">Cmd</span> + <span class="key">W</span> / <span class="key">Cmd</span> + <span class="key">Shift</span> + <span class="key">W</span></td>
+                <td>Cerrar pestaña actual o ventana</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
     <section class="py-8">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="bg-white rounded-2xl shadow-lg p-6">
