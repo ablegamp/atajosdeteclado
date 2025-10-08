@@ -104,8 +104,22 @@ body {
   transition: all 0.2s ease;
 }
 
-.btn-secondary:hover {
+.btn-outline {
+  background-color: transparent;
+  color: var(--text-secondary);
+  border: 1px solid var(--border-color);
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.5rem;
+  font-weight: 500;
+  text-decoration: none;
+  display: inline-block;
+  transition: all 0.2s ease;
+}
+
+.btn-outline:hover {
   background-color: var(--bg-secondary);
+  color: var(--text-primary);
+  border-color: var(--text-secondary);
   transform: translateY(-1px);
 }
 
