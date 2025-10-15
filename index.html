@@ -70,6 +70,79 @@
                 "url": "https://atajos-teclado.com/mac/"
             }
         ]
+    </script>
+
+    <!-- FAQ Schema -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+            {
+                "@type": "Question",
+                "name": "¿Cómo puedo personalizar mis propios atajos de teclado?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "La personalización de atajos depende del sistema operativo: Windows usa Win + R y regedit, macOS va a Preferencias del Sistema > Teclado > Funciones rápidas, y aplicaciones específicas tienen opciones en Herramientas > Personalizar teclado."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "¿Por qué algunos atajos no funcionan en mi computadora?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Los motivos incluyen conflictos con otros programas, necesidad de la tecla Fn en portátiles, configuración regional del teclado, o requisitos de permisos de administrador."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "¿Qué diferencia hay entre atajos en Windows y Mac?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Windows usa principalmente Ctrl y la tecla Windows (⊞ Win), mientras que macOS usa Cmd y la tecla Comando (⌘ Cmd). Ejemplos: Ctrl + C vs Cmd + C para copiar."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "¿Cómo puedo recordar tantos atajos de teclado?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Empieza por los más útiles, usa referencias visuales, practica gradualmente, crea asociaciones, y utiliza herramientas como Karabiner (Mac) o AutoHotkey (Windows)."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "¿Los atajos funcionan igual en todas las aplicaciones?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Algunos son universales como Ctrl/Cmd + C (copiar), pero otros son específicos de aplicación como Ctrl + Shift + F en VS Code."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "¿Es posible crear atajos para acciones complejas?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Sí, con herramientas como AutoHotkey (Windows), Karabiner Elements (Mac), macros de teclado, AppleScript (Mac) o PowerShell (Windows)."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "¿Cómo solucionar conflictos entre atajos?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Cambia prioridades en aplicaciones, usa herramientas específicas, modifica atajos del sistema, aprovecha contextos específicos y documenta cambios."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "¿Los atajos funcionan igual en teclados internacionales?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Varían según QWERTY, QWERTZ o AZERTY. Algunos caracteres cambian de posición según el idioma. Usa herramientas como WhatPulse para identificar posiciones."
+                }
+            }
+        ]
     }
     </script>
 </head>
@@ -481,7 +554,7 @@
                 <p class="text-xl text-blue-100 mb-8 max-w-2xl mx-auto">
                     Explora nuestra colección completa de atajos y transforma tu forma de trabajar con tu ordenador
                 </p>
-                <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <div class="flex flex-col sm:flex-row gap-4 justify-center mb-8">
                     <a href="windows/index.html" class="btn-primary bg-white text-blue-600 hover:bg-gray-100">
                         <i class="fab fa-windows mr-2"></i>
                         Empezar con Windows
@@ -489,6 +562,227 @@
                     <a href="excel/index.html" class="btn-secondary border-white text-white hover:bg-white hover:text-blue-600">
                         <i class="fas fa-table mr-2"></i>
                         Dominar Excel
+                    </a>
+                </div>
+            </div>
+        <!-- FAQ Section -->
+        <section class="py-20 bg-white">
+            <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl lg:text-4xl font-bold text-gray-900 mb-4">
+                        <i class="fas fa-question-circle text-blue-500 mr-3"></i>
+                        Preguntas Frecuentes
+                    </h2>
+                    <p class="text-xl text-gray-600 max-w-2xl mx-auto">
+                        Resuelve tus dudas más comunes sobre atajos de teclado
+                    </p>
+                </div>
+
+                <div class="space-y-6">
+                    <!-- Pregunta 1 -->
+                    <article class="faq-item bg-white rounded-lg shadow-md p-6">
+                        <div class="faq-question flex justify-between items-start">
+                            <h3 class="text-xl font-semibold text-gray-900">
+                                ¿Cómo puedo personalizar mis propios atajos de teclado?
+                            </h3>
+                            <button class="faq-toggle ml-4 text-blue-500 hover:text-blue-600">
+                                <i class="fas fa-plus"></i>
+                            </button>
+                        </div>
+                        <div class="faq-answer hidden mt-4">
+                            <p class="text-gray-700 mb-4">
+                                La personalización de atajos depende del sistema operativo:
+                            </p>
+                            <ul class="list-disc pl-6 space-y-2 text-gray-700">
+                                <li><strong>Windows:</strong> Usa <kbd class="bg-gray-100 px-2 py-1 rounded text-sm">Win + R</kbd> y escribe <code>regedit</code> para acceder al registro del sistema</li>
+                                <li><strong>macOS:</strong> Ve a <em>Preferencias del Sistema > Teclado > Funciones rápidas</em></li>
+                                <li><strong>Aplicaciones específicas:</strong> Busca en <em>Herramientas > Personalizar teclado</em> en cada programa</li>
+                            </ul>
+                        </div>
+                    </article>
+
+                    <!-- Pregunta 2 -->
+                    <article class="faq-item bg-white rounded-lg shadow-md p-6">
+                        <div class="faq-question flex justify-between items-start">
+                            <h3 class="text-xl font-semibold text-gray-900">
+                                ¿Por qué algunos atajos no funcionan en mi computadora?
+                            </h3>
+                            <button class="faq-toggle ml-4 text-blue-500 hover:text-blue-600">
+                                <i class="fas fa-plus"></i>
+                            </button>
+                        </div>
+                        <div class="faq-answer hidden mt-4">
+                            <p class="text-gray-700 mb-4">
+                                Los motivos más comunes por los que un atajo no funciona incluyen:
+                            </p>
+                            <ul class="list-disc pl-6 space-y-2 text-gray-700">
+                                <li><strong>Conflicto con otros programas:</strong> Algunos atajos pueden estar siendo utilizados por otras aplicaciones</li>
+                                <li><strong>Teclado diferente:</strong> En portátiles algunos atajos requieren la tecla <kbd class="bg-gray-100 px-2 py-1 rounded text-sm">Fn</kbd></li>
+                                <li><strong>Configuración regional:</strong> Algunos atajos cambian según el idioma del teclado</li>
+                                <li><strong>Permisos de administrador:</strong> Algunos atajos requieren permisos elevados</li>
+                            </ul>
+                        </div>
+                    </article>
+
+                    <!-- Pregunta 3 -->
+                    <article class="faq-item bg-white rounded-lg shadow-md p-6">
+                        <div class="faq-question flex justify-between items-start">
+                            <h3 class="text-xl font-semibold text-gray-900">
+                                ¿Qué diferencia hay entre atajos en Windows y Mac?
+                            </h3>
+                            <button class="faq-toggle ml-4 text-blue-500 hover:text-blue-600">
+                                <i class="fas fa-plus"></i>
+                            </button>
+                        </div>
+                        <div class="faq-answer hidden mt-4">
+                            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                                <div>
+                                    <h4 class="font-semibold text-blue-600 mb-2">Windows</h4>
+                                    <ul class="text-sm space-y-1 text-gray-700">
+                                        <li>• Usa principalmente <kbd class="bg-gray-100 px-2 py-1 rounded">Ctrl</kbd></li>
+                                        <li>• Tecla Windows: <kbd class="bg-gray-100 px-2 py-1 rounded">⊞ Win</kbd></li>
+                                        <li>• Ejemplo: <kbd class="bg-gray-100 px-2 py-1 rounded">Ctrl + C</kbd> (copiar)</li>
+                                    </ul>
+                                </div>
+                                <div>
+                                    <h4 class="font-semibold text-green-600 mb-2">macOS</h4>
+                                    <ul class="text-sm space-y-1 text-gray-700">
+                                        <li>• Usa principalmente <kbd class="bg-gray-100 px-2 py-1 rounded">Cmd</kbd></li>
+                                        <li>• Tecla Comando: <kbd class="bg-gray-100 px-2 py-1 rounded">⌘ Cmd</kbd></li>
+                                        <li>• Ejemplo: <kbd class="bg-gray-100 px-2 py-1 rounded">Cmd + C</kbd> (copiar)</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Pregunta 4 -->
+                    <article class="faq-item bg-white rounded-lg shadow-md p-6">
+                        <div class="faq-question flex justify-between items-start">
+                            <h3 class="text-xl font-semibold text-gray-900">
+                                ¿Cómo puedo recordar tantos atajos de teclado?
+                            </h3>
+                            <button class="faq-toggle ml-4 text-blue-500 hover:text-blue-600">
+                                <i class="fas fa-plus"></i>
+                            </button>
+                        </div>
+                        <div class="faq-answer hidden mt-4">
+                            <p class="text-gray-700 mb-4">
+                                Algunos consejos prácticos para memorizar atajos:
+                            </p>
+                            <ul class="list-disc pl-6 space-y-2 text-gray-700">
+                                <li><strong>Empieza por los más útiles:</strong> Copiar, pegar, deshacer, guardar</li>
+                                <li><strong>Usa referencias visuales:</strong> Imprime una chuleta con tus atajos favoritos</li>
+                                <li><strong>Practica gradualmente:</strong> Aprende 3-5 atajos nuevos por semana</li>
+                                <li><strong>Crea asociaciones:</strong> Relaciona atajos con acciones que ya conoces</li>
+                                <li><strong>Usa herramientas:</strong> Aplicaciones como Karabiner (Mac) o AutoHotkey (Windows)</li>
+                            </ul>
+                        </div>
+                    </article>
+
+                    <!-- Pregunta 5 -->
+                    <article class="faq-item bg-white rounded-lg shadow-md p-6">
+                        <div class="faq-question flex justify-between items-start">
+                            <h3 class="text-xl font-semibold text-gray-900">
+                                ¿Los atajos funcionan igual en todas las aplicaciones?
+                            </h3>
+                            <button class="faq-toggle ml-4 text-blue-500 hover:text-blue-600">
+                                <i class="fas fa-plus"></i>
+                            </button>
+                        </div>
+                        <div class="faq-answer hidden mt-4">
+                            <p class="text-gray-700 mb-4">
+                                No siempre. Algunos atajos son universales mientras que otros son específicos:
+                            </p>
+                            <div class="bg-gray-50 p-4 rounded-lg">
+                                <h4 class="font-semibold text-blue-600 mb-2">Universales (funcionan en casi todas las apps):</h4>
+                                <p class="text-sm text-gray-700 mb-2"><kbd class="bg-gray-100 px-2 py-1 rounded">Ctrl/Cmd + C</kbd> (copiar), <kbd class="bg-gray-100 px-2 py-1 rounded">Ctrl/Cmd + V</kbd> (pegar), <kbd class="bg-gray-100 px-2 py-1 rounded">Ctrl/Cmd + S</kbd> (guardar)</p>
+
+                                <h4 class="font-semibold text-orange-600 mb-2 mt-4">Específicos de aplicación:</h4>
+                                <p class="text-sm text-gray-700"><kbd class="bg-gray-100 px-2 py-1 rounded">Ctrl + Shift + F</kbd> (buscar en VS Code), <kbd class="bg-gray-100 px-2 py-1 rounded">Ctrl + Alt + L</kbd> (formatear código)</p>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Pregunta 6 -->
+                    <article class="faq-item bg-white rounded-lg shadow-md p-6">
+                        <div class="faq-question flex justify-between items-start">
+                            <h3 class="text-xl font-semibold text-gray-900">
+                                ¿Es posible crear atajos para acciones complejas?
+                            </h3>
+                            <button class="faq-toggle ml-4 text-blue-500 hover:text-blue-600">
+                                <i class="fas fa-plus"></i>
+                            </button>
+                        </div>
+                        <div class="faq-answer hidden mt-4">
+                            <p class="text-gray-700 mb-4">
+                                ¡Sí! Puedes crear macros y scripts avanzados:
+                            </p>
+                            <ul class="list-disc pl-6 space-y-2 text-gray-700">
+                                <li><strong>AutoHotkey (Windows):</strong> Crea scripts personalizados para cualquier acción</li>
+                                <li><strong>Karabiner Elements (Mac):</strong> Personaliza atajos a nivel de sistema operativo</li>
+                                <li><strong>Macros de teclado:</strong> Muchas aplicaciones permiten grabar secuencias de acciones</li>
+                                <li><strong>AppleScript (Mac):</strong> Automatiza tareas complejas con scripts</li>
+                                <li><strong>PowerShell (Windows):</strong> Ejecuta comandos avanzados con atajos personalizados</li>
+                            </ul>
+                        </div>
+                    </article>
+
+                    <!-- Pregunta 7 -->
+                    <article class="faq-item bg-white rounded-lg shadow-md p-6">
+                        <div class="faq-question flex justify-between items-start">
+                            <h3 class="text-xl font-semibold text-gray-900">
+                                ¿Cómo solucionar conflictos entre atajos?
+                            </h3>
+                            <button class="faq-toggle ml-4 text-blue-500 hover:text-blue-600">
+                                <i class="fas fa-plus"></i>
+                            </button>
+                        </div>
+                        <div class="faq-answer hidden mt-4">
+                            <p class="text-gray-700 mb-4">
+                                Estrategias para resolver conflictos de atajos:
+                            </p>
+                            <ul class="list-disc pl-6 space-y-2 text-gray-700">
+                                <li><strong>Cambia la prioridad:</strong> Algunas aplicaciones permiten reasignar atajos</li>
+                                <li><strong>Usa herramientas específicas:</strong> AutoHotkey o Karabiner pueden interceptar atajos</li>
+                                <li><strong>Modifica atajos del sistema:</strong> Cambia atajos globales desde la configuración</li>
+                                <li><strong>Usa contextos específicos:</strong> Algunos atajos solo funcionan en ciertas aplicaciones</li>
+                                <li><strong>Documenta tus cambios:</strong> Lleva un registro de los atajos modificados</li>
+                            </ul>
+                        </div>
+                    </article>
+
+                    <!-- Pregunta 8 -->
+                    <article class="faq-item bg-white rounded-lg shadow-md p-6">
+                        <div class="faq-question flex justify-between items-start">
+                            <h3 class="text-xl font-semibold text-gray-900">
+                                ¿Los atajos funcionan igual en teclados internacionales?
+                            </h3>
+                            <button class="faq-toggle ml-4 text-blue-500 hover:text-blue-600">
+                                <i class="fas fa-plus"></i>
+                            </button>
+                        </div>
+                        <div class="faq-answer hidden mt-4">
+                            <p class="text-gray-700 mb-4">
+                                Los atajos pueden variar según la distribución del teclado:
+                            </p>
+                            <div class="bg-blue-50 p-4 rounded-lg">
+                                <h4 class="font-semibold text-blue-600 mb-2">QWERTY vs QWERTZ vs AZERTY</h4>
+                                <p class="text-sm text-gray-700">
+                                    Algunos caracteres especiales cambian de posición según el idioma. Por ejemplo, el símbolo <kbd class="bg-gray-100 px-2 py-1 rounded">@</kbd> está en diferentes lugares en teclados de EE.UU. vs España vs Francia.
+                                </p>
+                                <p class="text-sm text-gray-700 mt-2">
+                                    <strong>Recomendación:</strong> Usa herramientas como <em>WhatPulse</em> para identificar dónde están realmente tus teclas especiales.
+                                </p>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+
+                <div class="text-center mt-12">
+                    <a href="faq.html" class="btn-primary">
+                        <i class="fas fa-question-circle mr-2"></i>
+                        Ver FAQ Completo
                     </a>
                 </div>
             </div>
@@ -542,6 +836,7 @@
                     <h4 class="text-lg font-semibold mb-4">Soporte</h4>
                     <ul class="space-y-2">
                         <li><a href="contacto.html" class="footer-link">Contacto</a></li>
+                        <li><a href="sobre-nosotros.html" class="footer-link">Sobre Nosotros</a></li>
                         <li><a href="faq.html" class="footer-link">FAQ</a></li>
                         <li><a href="#" class="footer-link">Sugerir Atajo</a></li>
                         <li><a href="aviso-legal.html" class="footer-link">Aviso Legal</a></li>
@@ -574,5 +869,19 @@
     <!-- JavaScript -->
     <script src="js/shortcuts-data.js"></script>
     <script src="js/main.js"></script>
+
+    <!-- FAQ Toggle Functionality -->
+    <script>
+        document.querySelectorAll('.faq-toggle').forEach(button => {
+            button.addEventListener('click', () => {
+                const answer = button.parentElement.nextElementSibling;
+                const icon = button.querySelector('i');
+
+                answer.classList.toggle('hidden');
+                icon.classList.toggle('fa-plus');
+                icon.classList.toggle('fa-minus');
+            });
+        });
+    </script>
 </body>
 </html>
