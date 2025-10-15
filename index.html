@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="es" itemscope itemtype="https://schema.org/WebSite">
+<html lang="es" itemscope itemtype="https://schema.org/WebSite https://schema.org/CollectionPage">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,6 +10,11 @@
     <meta name="keywords" content="atajos de teclado, shortcuts, combinaciones de teclas, Windows, Mac, Excel, Word, Photoshop, productividad, guía completa">
     <meta name="author" content="Atajos de Teclado">
     <meta name="robots" content="index, follow">
+    
+    <!-- Schema.org CollectionPage metadata -->
+    <meta itemprop="name" content="Guía Completa de Atajos de Teclado">
+    <meta itemprop="description" content="Colección completa de atajos de teclado para Windows, Mac, Excel, Word, Photoshop, navegadores y más aplicaciones. Mejora tu productividad con nuestra guía de shortcuts.">
+    <meta itemprop="url" content="https://atajos-teclado.com">
     
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
@@ -70,6 +75,85 @@
                 "url": "https://atajos-teclado.com/mac/"
             }
         ]
+    </script>
+
+    <!-- CollectionPage Schema -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "CollectionPage",
+        "name": "Guía Completa de Atajos de Teclado",
+        "description": "Colección completa de atajos de teclado para Windows, Mac, Excel, Word, Photoshop, navegadores y más aplicaciones. Mejora tu productividad con nuestra guía de shortcuts.",
+        "url": "https://atajos-teclado.com",
+        "mainEntity": {
+            "@type": "ItemList",
+            "name": "Categorías de Atajos de Teclado",
+            "description": "Guías completas de atajos de teclado organizadas por aplicación y sistema operativo",
+            "numberOfItems": 6,
+            "itemListElement": [
+                {
+                    "@type": "ListItem",
+                    "position": 1,
+                    "name": "Atajos de Windows",
+                    "description": "Guía completa de atajos para Windows 10 y 11",
+                    "url": "https://atajos-teclado.com/windows/"
+                },
+                {
+                    "@type": "ListItem",
+                    "position": 2,
+                    "name": "Atajos de Excel",
+                    "description": "Shortcuts esenciales para hojas de cálculo",
+                    "url": "https://atajos-teclado.com/excel/"
+                },
+                {
+                    "@type": "ListItem",
+                    "position": 3,
+                    "name": "Atajos de Word",
+                    "description": "Combinaciones de teclado para procesamiento de texto",
+                    "url": "https://atajos-teclado.com/word/"
+                },
+                {
+                    "@type": "ListItem",
+                    "position": 4,
+                    "name": "Atajos de Mac",
+                    "description": "Guía de atajos para macOS y aplicaciones nativas",
+                    "url": "https://atajos-teclado.com/mac/"
+                },
+                {
+                    "@type": "ListItem",
+                    "position": 5,
+                    "name": "Atajos de Navegadores",
+                    "description": "Shortcuts para Chrome, Firefox, Edge y herramientas de desarrollo",
+                    "url": "https://atajos-teclado.com/navegadores/"
+                },
+                {
+                    "@type": "ListItem",
+                    "position": 6,
+                    "name": "Atajos de Photoshop",
+                    "description": "Combinaciones avanzadas para diseño gráfico",
+                    "url": "https://atajos-teclado.com/photoshop/"
+                }
+            ]
+        },
+        "isPartOf": {
+            "@type": "WebSite",
+            "name": "Atajos de Teclado",
+            "url": "https://atajos-teclado.com"
+        },
+        "about": [
+            {
+                "@type": "Thing",
+                "name": "Atajos de Teclado",
+                "description": "Combinaciones de teclas para mejorar la productividad"
+            },
+            {
+                "@type": "Thing",
+                "name": "Productividad",
+                "description": "Técnicas para trabajar de manera más eficiente"
+            }
+        ],
+        "keywords": ["atajos de teclado", "shortcuts", "combinaciones de teclas", "productividad", "Windows", "Mac", "Excel", "Word", "Photoshop"]
+    }
     </script>
 
     <!-- FAQ Schema -->
