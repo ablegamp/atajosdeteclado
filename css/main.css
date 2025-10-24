@@ -327,3 +327,49 @@ body {
 #back-to-top.hidden {
   pointer-events: none;
 }
+
+/* Blog Manager Styles */
+.category-button.active {
+  background-color: rgb(59 130 246 / 0.1);
+  border: 2px solid rgb(59 130 246);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px -8px rgb(59 130 246 / 0.25);
+}
+
+.category-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px -8px rgb(0 0 0 / 0.1);
+}
+
+/* Animación para artículos filtrados */
+.card.hidden {
+  display: none;
+}
+
+.card.fade-in {
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Estilos para tags */
+.tag {
+  display: inline-block;
+  padding: 0.25rem 0.75rem;
+  background-color: rgb(59 130 246 / 0.1);
+  color: rgb(59 130 246);
+  border-radius: 9999px;
+  font-size: 0.75rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
