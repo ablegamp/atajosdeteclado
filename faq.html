@@ -90,9 +90,32 @@
                     <a href="blog/index.html" class="nav-link">Blog</a>
                 </nav>
 
-            </div>
+                <!-- Theme Toggle & Mobile Menu -->
+                <div class="flex items-center space-x-3">
+                    <!-- Mobile menu button -->
+                    <button id="mobile-menu-btn" class="md:hidden p-2 rounded-md hover:bg-gray-100" aria-label="Menú">
+                        <i class="fas fa-bars"></i>
+                    </button>
+                </div>
         </div>
     </header>
+
+    <!-- Mobile Navigation -->
+    <nav id="mobile-menu" class="hidden md:hidden pb-4 bg-white/90 backdrop-blur-sm border-b border-gray-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-2 gap-2">
+                <a href="windows/index.html" class="nav-link text-center">Windows</a>
+                <a href="excel/index.html" class="nav-link text-center">Excel</a>
+                <a href="word/index.html" class="nav-link text-center">Word</a>
+                <a href="mac/index.html" class="nav-link text-center">Mac</a>
+                <a href="navegadores/index.html" class="nav-link text-center">Navegadores</a>
+                <a href="photoshop/index.html" class="nav-link text-center">Photoshop</a>
+                <a href="blog/index.html" class="nav-link text-center">Blog</a>
+                <a href="faq.html" class="nav-link text-center active">FAQ</a>
+                <a href="contacto.html" class="nav-link text-center col-span-2">Contacto</a>
+            </div>
+        </div>
+    </nav>
 
     <main>
         <!-- Breadcrumb -->
