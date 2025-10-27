@@ -63,7 +63,8 @@ Una web educativa completa sobre atajos de teclado con estructura SEO avanzada, 
 │   ├── index.html                # Atajos de Excel (general)
 │   ├── basico.html               # Excel para principiantes
 │   ├── avanzado.html             # Excel avanzado
-│   └── 10-atajos-excel-contabilidad.html  # Atajos para contabilidad
+│   ├── 10-atajos-excel-contabilidad.html  # Atajos para contabilidad
+│   └── atajos-basicos-excel-usuario.html  # Atajos básicos para usuarios
 ```
 
 ## 🎯 Objetivos SEO y Contenido
