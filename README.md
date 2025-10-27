@@ -62,25 +62,8 @@ Una web educativa completa sobre atajos de teclado con estructura SEO avanzada, 
 ├── excel/
 │   ├── index.html                # Atajos de Excel (general)
 │   ├── basico.html               # Excel para principiantes
-│   └── avanzado.html             # Excel avanzado
-├── word/
-│   ├── index.html                # Atajos de Word (general)
-│   ├── basico.html               # Word básico
-│   └── avanzado.html             # Word avanzado
-├── mac/
-│   ├── index.html                # Atajos de macOS
-│   ├── basico.html               # Mac básico
-│   └── avanzado.html             # Mac avanzado
-├── navegadores/
-│   ├── index.html                # Atajos de Chrome, Edge, Firefox
-│   ├── chrome.html               # Atajos de Google Chrome
-│   ├── edge.html                 # Atajos de Microsoft Edge
-│   └── firefox.html              # Atajos de Mozilla Firefox
-├── photoshop/
-│   └── index.html                # Atajos de Adobe Photoshop
-└── blog/
-    ├── index.html                # Página principal del blog
-    └── 10-atajos-excel-contabilidad.html
+│   ├── avanzado.html             # Excel avanzado
+│   └── 10-atajos-excel-contabilidad.html  # Atajos para contabilidad
 ```
 
 ## 🎯 Objetivos SEO y Contenido
