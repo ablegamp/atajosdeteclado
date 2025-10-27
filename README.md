@@ -58,7 +58,8 @@ Una web educativa completa sobre atajos de teclado con estructura SEO avanzada, 
 ├── windows/
 │   ├── index.html                # Atajos de Windows (general)
 │   ├── windows-10.html           # Atajos específicos de Windows 10
-│   └── windows-11.html           # Novedades y atajos de Windows 11
+│   ├── windows-11.html           # Novedades y atajos de Windows 11
+│   └── atajos-teclado-esenciales-windows-10.html  # Atajos esenciales Windows 10
 ├── excel/
 │   ├── index.html                # Atajos de Excel (general)
 │   ├── basico.html               # Excel para principiantes
