@@ -175,18 +175,6 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.atajosteclado.com/blog/como-hacer-captura-pantalla-atajos.html</loc>
-    <lastmod>2025-11-03</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://www.atajosteclado.com/blog/transicion-windows-mac-atajos.html</loc>
-    <lastmod>2025-11-03</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
     <loc>https://www.atajosteclado.com/blog/atajos-teclado-mas-utiles-productividad.html</loc>
     <lastmod>2025-10-30</lastmod>
     <changefreq>monthly</changefreq>
@@ -245,12 +233,6 @@
     <lastmod>2025-10-29</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://www.atajosteclado.com/blog/atajo-administrador-tareas-windows.html</loc>
-    <lastmod>2025-10-31</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.atajosteclado.com/blog/ergonomia-digital-atajos-teclado.html</loc>
@@ -369,6 +351,36 @@
   <url>
     <loc>https://www.atajosteclado.com/blog/personalizacion-atajos-propios.html</loc>
     <lastmod>2025-11-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.atajosteclado.com/blog/atajos-outlook-gestion-email.html</loc>
+    <lastmod>2025-11-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.atajosteclado.com/blog/atajos-telegram-desktop.html</loc>
+    <lastmod>2025-11-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.atajosteclado.com/blog/atajos-zoom-reuniones-virtuales.html</loc>
+    <lastmod>2025-11-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.atajosteclado.com/blog/atajos-zoom-webinars-eventos.html</loc>
+    <lastmod>2025-12-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.atajosteclado.com/blog/setup-teclado-maxima-productividad.html</loc>
+    <lastmod>2025-12-03</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
