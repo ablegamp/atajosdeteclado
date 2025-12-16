@@ -398,7 +398,13 @@
   </url>
   <url>
     <loc>https://www.atajosteclado.com/mega-guias/atajos-mas-usados-2025/</loc>
-    <lastmod>2025-12-09</lastmod>
+    <lastmod>2025-12-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://www.atajosteclado.com/mega-guias/atajos-productividad-estudio-trabajo/</loc>
+    <lastmod>2025-12-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
